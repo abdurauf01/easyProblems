@@ -1,0 +1,18 @@
+class Solution {
+    public boolean isPerfectSquare(int num){
+        
+         if(num==1)return true;
+          if (num == 2 || num== 3 ) return false;
+          long n = 2;
+          long p = n*n;
+        while(p<num){
+            n++;
+            p=n*n;
+        }
+        
+         if(p==num){
+             return true;
+         }
+        return false;
+    }
+}
