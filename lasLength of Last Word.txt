@@ -1,0 +1,8 @@
+class Solution {
+    public int lengthOfLastWord(String s) {
+     String[] f = s.split(" ");
+        if(f.length>0)
+            return f[f.length-1].length();
+        return 0;
+    }
+}
