@@ -1,0 +1,10 @@
+ class Solution {
+        public  boolean containsDuplicate(int[] nums) {
+
+            HashSet<Integer> numss = new HashSet<>();
+            for (int num : nums) {
+                numss.add(num);
+            }
+            return nums.length != numss.size();
+        }
+    }
